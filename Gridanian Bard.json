@@ -1,0 +1,1368 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FFXIV",
+				"abbreviation": "FFXIV5E",
+				"full": "5th Edition D&D x Final Fantasy XIV - Gridanian Bard",
+				"authors": [
+					"SilentSoren"
+				],
+				"convertedBy": [
+					"hockeykvalek"
+				],
+				"url": "https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv",
+				"version": "Before The Fall Edition",
+				"color": "867d5a"
+			}
+		],
+		"dateAdded": 1957561781,
+		"dateLastModified": 1957561781,
+		"_dateLastModifiedHash": "3a915b08b7"
+	},
+	"subclass": [
+		{
+			"name": "God Quiver",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 8,
+			"shortName": "God Quiver",
+			"subclassFeatures": [
+				"God Quiver|Gridanian Bard|FFXIV|God Quiver|FFXIV|3",
+				"Hawkeye|Gridanian Bard|FFXIV|God Quiver|FFXIV|7",
+				"Bardic Barrage|Gridanian Bard|FFXIV|God Quiver|FFXIV|11",
+				"Misery's End|Gridanian Bard|FFXIV|God Quiver|FFXIV|15"
+			]
+		},
+		{
+			"name": "Soul Voice",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 8,
+			"shortName": "Soul Voice",
+			"subclassFeatures": [
+				"Soul Voice|Gridanian Bard|FFXIV|Soul Voice|FFXIV|3",
+				"Endless Performance|Gridanian Bard|FFXIV|Soul Voice|FFXIV|7",
+				"Mage's Ballad|Gridanian Bard|FFXIV|Soul Voice|FFXIV|11",
+				"Battle Voice|Gridanian Bard|FFXIV|Soul Voice|FFXIV|15"
+			]
+		},
+		{
+			"name": "Shadowpoint",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 8,
+			"shortName": "Shadowpoint",
+			"subclassFeatures": [
+				"Shadowpoint|Gridanian Bard|FFXIV|Shadowpoint|FFXIV|3",
+				"Degenerative Toxicity|Gridanian Bard|FFXIV|Shadowpoint|FFXIV|7",
+				"Advanced Toxins|Gridanian Bard|FFXIV|Shadowpoint|FFXIV|11",
+				"Fever Pitch|Gridanian Bard|FFXIV|Shadowpoint|FFXIV|15"
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Gridanian Bard",
+			"source": "FFXIV",
+			"page": 83,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"{@item longbow|phb|longbows}",
+					"{@item longsword|phb|longswords}",
+					"{@item rapier|phb|rapiers}",
+					"{@item shortsword|phb|shortswords}"
+				],
+				"tools": [
+					"three musical instrument of your choice"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"arcana",
+								"athletics",
+								"desception",
+								"history",
+								"insight",
+								"intimidation",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"performance",
+								"persuasion",
+								"religion",
+								"sleight of hand",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"A set of {@item leather armor|phb}",
+					"(a) {@item rapier|phb|rapiers} or (b) two {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) {@item longbow|phb} and a quiver with 20 {@item arrow|phb|arrows}",
+					"(a) {@item explorer's pack|phb} or (b) an {@item scholar's pack|phb}",
+					"A musical instrument of your choice"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							"rapier|phb"
+						],
+						"b": [
+							"longbow|phb",
+							"arrow (20)"
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"scholar's pack|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"special": "a musical instrument"
+							}
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Spells Known|spells|class=Gridanian Bard (FFXIV5E)}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Gridanian Bard (FFXIV5E)}",
+						"{@filter 2nd|spells|level=2|class=Gridanian Bard (FFXIV5E)}",
+						"{@filter 3rd|spells|level=3|class=Gridanian Bard (FFXIV5E)}",
+						"{@filter 4th|spells|level=4|class=Gridanian Bard (FFXIV5E)}",
+						"{@filter 5th|spells|level=5|class=Gridanian Bard (FFXIV5E)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"spellsKnownProgression": [
+				0,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11
+			],
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"acrobatics",
+									"animal handling",
+									"arcana",
+									"athletics",
+									"desception",
+									"history",
+									"insight",
+									"intimidation",
+									"investigation",
+									"medicine",
+									"nature",
+									"perception",
+									"performance",
+									"persuasion",
+									"religion",
+									"sleight of hand",
+									"stealth",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"one instrument of your choice."
+					]
+				}
+			},
+			"classFeatures": [
+				"Bardic Inspiration|Gridanian Bard|FFXIV|1",
+				"Fighting Style|Gridanian Bard|FFXIV|1",
+				"Spellcasting|Gridanian Bard|FFXIV|2",
+				"Minstrel's Music|Gridanian Bard|FFXIV|2",
+				"Expertise 1|Gridanian Bard|FFXIV|3",
+				{
+					"classFeature": "Gridanian Bard Archetype|Gridanian Bard|FFXIV|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gridanian Bard|FFXIV|4",
+				"Extra Attack|Gridanian Bard|FFXIV|5",
+				"Troubadour Training|Gridanian Bard|FFXIV|6",
+				{
+					"classFeature": "Archetype Feature|Gridanian Bard|FFXIV|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gridanian Bard|FFXIV|8",
+				"Unshakeable Performer|Gridanian Bard|FFXIV|10",
+				"Expertise 2|Gridanian Bard|FFXIV|10",
+				{
+					"classFeature": "Archetype Feature|Gridanian Bard|FFXIV|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gridanian Bard|FFXIV|12",
+				"Radiant Finale|Gridanian Bard|FFXIV|14",
+				{
+					"classFeature": "Archetype Feature|Gridanian Bard|FFXIV|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gridanian Bard|FFXIV|16",
+				"Final Fantasia|Gridanian Bard|FFXIV|18",
+				"Ability Score Improvement|Gridanian Bard|FFXIV|19",
+				"Minstrel's Coda|Gridanian Bard|FFXIV|20"
+			],
+			"subclassTitle": "Archetype",
+			"fluff": [
+				{
+					"type": "section",
+					"name": "Gridanian Bard",
+					"source": "FFXIV",
+					"page": 42,
+					"entries": [
+						"Nestled in the trees at the edge of the wood, a skilled bowmaster watches their mark wander the plains 100 yalms away. With a slight smile they let loose an arrow toppling the creature in a single shot.",
+						"In the thick of battle, a fearless singer's voice belows out above the clash of steel, their voice imbued with magic, ushering great power unto their allies, turning the tide of battle.",
+						"In preparation for an upcoming battle, a careful hunter crafts a series of poisons and douses their arrow heads. Though their attacks appear simple, the poison running through their future mark will ravage its body.",
+						"Gridanian Bards are a somewhat young profession in Eorzea, but one of great effect for the Black Shroud. Historically finding their beginnings as archers, these bards mix sword and song in order to protect themselves and their allies in the heat of battle.",
+						{
+							"type": "entries",
+							"name": "Songs for the souls",
+							"page": 42,
+							"entries": [
+								"One of the originators of the craft was a disgraced commander who travelled the land singing songs to soothe the spirits of their dead allies. In time this commemorative art would find great utility on the battle field and then go on to be widely practiced across the world."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Of Lyres and Lyrics",
+							"page": 42,
+							"entries": [
+								"Bards make use of musical instruments and their own voice to weave beautiful musical pieces that have magical properties. Their ability to soothe wounds, fend off danger and weaken foes has made their presence invaluable on the battle field."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Bard",
+							"page": 42,
+							"entries": [
+								"Bards traditionally are specially trained by some sort of mentor figure who assists them in unlocking the potential of spells through song. This is not always that case though as some are able to unlock these secrets for themselves. You must also consider how to treat these mystical arts, do you follow their purposes of the past where they served to soothe spirits and support military units, or have you taken music back as a free lance wanderer, weaving songs and stories for the masses. A bard at heart is a free spirit who can use their magical power how they see fit."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"page": 42,
+							"entries": [
+								"You can make a Gridanian Bard quickly by following these suggestions. First make Dexterity your highest ability score, following with Charisma. Second take the {@background Entertainer} background. Third, take the archery fighting style."
+							]
+						}
+					]
+				}
+			],
+			"classSpells": [
+				"absorb elements|xge",
+				"Alarm",
+				"Bane",
+				"Charm Person",
+				"Command",
+				"Cure Wounds",
+				"Detect Magic",
+				"Detect Poison and Disease",
+				"Disguise Self",
+				"Dissonant Whispers",
+				"Faerie Fire",
+				"Feather Fall",
+				"Hail of Thorns",
+				"Healing Word",
+				"Heroism",
+				"Idenitfy",
+				"Hunter's Mark",
+				"Jump",
+				"Longstrider",
+				"silvery barbs|scc",
+				"snare|xge",
+				"Tasha's Hideous Laughter",
+				"Thunderwave",
+				"sephyr strike|xge",
+				"Aid",
+				"air bubble|aag",
+				"Barkskin",
+				"Calm Emotions",
+				"Cordon of Arrows",
+				"Crown of Madness",
+				"Darkvision",
+				"Detect Thoughts",
+				"Enhance Ability",
+				"Enthrall",
+				"Find Traps",
+				"Hold Person",
+				"Invisibility",
+				"Knock",
+				"Lesser Restoration",
+				"Locate Animals or Plants",
+				"Locate Object",
+				"Magic Mouth",
+				"Magic Weapon",
+				"Mirror Image",
+				"Pass Without Trace",
+				"Protection from Poison",
+				"pyrotechnics|xge",
+				"See Incisibility",
+				"Shatter",
+				"Silence",
+				"skywrite|xge",
+				"Suggestion",
+				"Zone of Truth",
+				"ashardalon's stride|ftd",
+				"Bestow Curse",
+				"catnap|xge",
+				"Conjure Barrage",
+				"Dispel Magic",
+				"Elemental Weapon",
+				"enemies abound|xge",
+				"fast friends|ai",
+				"Fear",
+				"flame arrows|xge",
+				"Hypnotic Pattern",
+				"Lightning Arrow",
+				"Major Image",
+				"Mass Healing Word",
+				"Nondetection",
+				"Protection from Energy",
+				"Revivify",
+				"Sending",
+				"Slow",
+				"Tongues",
+				"Water Breathing",
+				"Water Walk",
+				"charm monster|xge",
+				"Compulsion",
+				"Confusions",
+				"Dimension Door",
+				"Freedom of Movement",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Locate Creature",
+				"Phantasmal Killer",
+				"Polymorph",
+				"Stoneskin",
+				"Conjure Volley",
+				"Dominate Person",
+				"Dream",
+				"Geas",
+				"Greater Restoration",
+				"Hold Monster",
+				"Legend Lore",
+				"Mass Cure Wounds",
+				"Mislead",
+				"Modify Memory",
+				"Rary's Telepathic Bond",
+				"Scrying",
+				"Seeming",
+				"skill empowerment|xge",
+				"steel wind strike|xge",
+				"synaptic static|xge",
+				"Swift Quiver",
+				"Teleportation Circle"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "1/2"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Bardic Inspiration",
+			"source": "FFXIV",
+			"page": 44,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, you can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a {@dice d6}.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Using Bardic Inspiration",
+							"entries": [
+								"Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Number of Uses",
+							"entries": [
+								"You can use this feature a number of times equal to your Charisma modifier + your proficiency bonus. You regain any expended uses when you finish a long rest."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "At Higher Levels",
+							"entries": [
+								"Your Bardic Inspiration die changes when you reach certain levels in this Class. The die becomes a {@dice d8} at 5th level, a {@dice d10} at 10th level, and a {@dice d12} at 15th level."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 44,
+			"level": 1,
+			"entries": [
+				"At 1st level, you adopt a particular style of fighting as your specialty. Choose one of the following options.",
+				"You can't take a Fighting Style option more than once, even if you later get to choose again.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Archery"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defense"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Two-Weapon Fighting"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 44,
+			"level": 2,
+			"entries": [
+				"By the time you reach 2nd level, you have learned to use music to manipulate magical energy and cast spells.",
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The bard table shows how many spell slots you have to cast your bard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"For example, if you know the 1st-level spell Charm Person and have a 1st-level and a 2nd-level spell slot available, you can cast Charm Person using either slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"You know two 1st-level spells of your choice from the {@filter Gridanian Bard spell list|spells|class=Gridanian Bard (FFXIV5E)}.",
+						"The Spells Known column of the bard table shows when you learn more bard spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+						"Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Charisma is your spellcasting ability for your bard spells, since your magic draws on your presence and expression through music. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"At 2nd level, you can use an instrument as a spellcasting focus for your bard spells. You can use any instrument you are proficient with to assist you in weaving your spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Minstrel's Music",
+			"source": "FFXIV",
+			"page": 44,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"level": 2,
+			"entries": [
+				"Beginning at 2nd level, your voice becomes imbued with magic power allowing you to sing songs that empower allies and weaken foes. As an action you can expend a use of your Bardic Inspiration and begin to sing, affecting you and creatures who can hear you within 30ft. of you. You must maintain concentration while singing as though you are casting a spell. You may perform for up to 1 minute. You know two songs:",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "The Warden's Paean",
+							"entries": [
+								"When an you or an allied creature takes damage they take reduced damage equal to your bardic inspiration die."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Foe's Requiem",
+							"entries": [
+								"When you or an allied creature who begins their turn within range of your song deals damage, as a reaction you may expend one bardic inspiration die. Roll the die and add the result as bonus damage."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Expertise 1",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 44,
+			"level": 3,
+			"entries": [
+				"At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+			]
+		},
+		{
+			"name": "Gridanian Bard Archetype",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 3,
+			"entries": [
+				"At 3rd level, you select your bardic focus which will guide your progression as you expand your skill set. The God's Quiver is a self assured traditionalist who relies fully on their marksmanship, the Soul Voice focuses on the magical power of song and the Shadow Point who makes use of every advantage at their disposal to weaken their foes via poison and treachery."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 7,
+			"entries": [
+				"At 7th level, you gain a feature granted by your Gridanian Bard Archetype."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain a feature granted by your Gridanian Bard Archetype."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain a feature granted by your Gridanian Bard Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Troubadour Training",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"level": 6,
+			"entries": [
+				"Beginning at 6th level, you've developed further songs to assist your allies in the heat of battle.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Army's Paeon",
+							"entries": [
+								"When you or an allied creature within range of your song is targeted by an attack, you may use your reaction to expend one bardic inspiration die to magically protect the creature. Roll the die and add the result to the creature's AC for the attack."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Wanderer's Minuet",
+							"entries": [
+								"When you or an allied creature starts its turn within range of your song, its base speed is increased by 10ft. and they gain advantage on Dexterity saving throws until the start of their next turn."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Expertise 2",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 44,
+			"level": 10,
+			"entries": [
+				"At 10th level, choose two more of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+			]
+		},
+		{
+			"name": "Unshakeable Performer",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 10,
+			"entries": [
+				"Beginning at 10th level, you gain advantage on charisma saving throws."
+			]
+		},
+		{
+			"name": "Radiant Finale",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"level": 14,
+			"entries": [
+				"Beginning at 14th level, while one of your minstrel's music songs are active, as an action you add a stylized ending to your song. You are able to choose how to end your performance:",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Forte",
+							"entries": [
+								"A creature you can see within range of your song must make a Charisma saving throw against your Bard spell save DC, taking 2d8 psychic damage and having disadvantage on their next attack on a failure, and taking half as much damage without any other effects on a success."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Piano",
+							"entries": [
+								"A creature you can see within range of your song is healed by 2d8 hit points."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Final Fantasia",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 18,
+			"entries": [
+				"Beginning at 18th level, you are able to mix two song styles into an unforgettable performance. When you use your minstrel music feature you can choose two effects to apply to your song. You can only do this once. Use of this feature recovers when you complete a long rest."
+			]
+		},
+		{
+			"name": "Minstrel's Coda",
+			"source": "FFXIV",
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"page": 45,
+			"level": 20,
+			"entries": [
+				"Beginning at 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "God Quiver",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "God Quiver",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"entries": [
+				"God Quivers are skilled marksmen that rely on their sharp eyes and their certainty that they'll land their shots with vicious accuracy, only using the power of song to further empower themselves.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Straight Shot|Gridanian Bard|FFXIV|God Quiver|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Straight Shot",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "God Quiver",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level God Quiver feature}",
+				"Beginning at 3rd level, when you roll for an attack, you may expend one of your bardic inspiration die to improve the deadly accuracy of your shot. Roll the die and add the result to the attack roll, if the resulting sum is 20 or higher, the attack becomes a critical hit."
+			]
+		},
+		{
+			"name": "Hawkeye",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "God Quiver",
+			"subclassSource": "FFXIV",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level God Quiver feature}",
+				"Beginning at 7th level, you gain advantage when making perception skill checks that rely on sight. Additionally, the effective range of your ranged weapons are increased by 50ft."
+			]
+		},
+		{
+			"name": "Bardic Barrage",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "God Quiver",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level God Quiver feature}",
+				"Beginning at 11th level, when you use the Attack action to make a ranged weapon attack, as a bonus action you may make one additional attack. You may do this a number of times equal to your Dexterity modifier. Uses of this feature are recovered when you complete a long rest."
+			]
+		},
+		{
+			"name": "Misery's End",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "God Quiver",
+			"subclassSource": "FFXIV",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level God Quiver feature}",
+				"Beginning at 15th level, when one of your attacks deals a critical hit, it deals bonus damage equal to twice the weapon's damage die."
+			]
+		},
+		{
+			"name": "Soul Voice",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Soul Voice",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"entries": [
+				"The Soul Voice bards are the skilled archers who've fully taken to their musical role on the battle field, mixing spell casting with music to empower their allies with peerless effectiveness.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soothing Songs|Gridanian Bard|FFXIV|Soul Voice|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Soothing Songs",
+			"source": "FFXIV",
+			"page": 46,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Soul Voice",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Soul Voice feature}",
+				"Beginning at 3rd level, you have learned some new songs to support your allies during battle. When you use your Minstreal's Song feature you gain the following options.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Nature's Minne",
+							"entries": [
+								"At the start of your turn, you an all allied creatures recover 1d4 hit points."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Silent Nocturne",
+							"entries": [
+								"When a creature attempts to cast a spell with verbal components, you may use your reaction to attempt to drown out their words before they speak. They must succeed on a Charisma saving throw against your Bard spell save DC. On a failure, the creature becomes unable to speak."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Endless Performance",
+			"source": "FFXIV",
+			"page": 46,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Soul Voice",
+			"subclassSource": "FFXIV",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Soul Voice feature}",
+				"Beginning at 7th level, as a bonus action, you may spend one of your spell slots and regain uses of Bardic Inspiration equal to the spell level of the spell slot spent."
+			]
+		},
+		{
+			"name": "Mage's Ballad",
+			"source": "FFXIV",
+			"page": 46,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Soul Voice",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Soul Voice feature}",
+				"Beginning at 11th level, you've learned to transform your magical music into raw magic power. During a short rest, you may spend a bardic inspiration die to recover spell slots. Roll the die and recover a number of spells slots whose total spell level is equal to or less than the result of the die. You may only do this once. Use of this feature refreshes when you complete a long rest."
+			]
+		},
+		{
+			"name": "Battle Voice",
+			"source": "FFXIV",
+			"page": 46,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Soul Voice",
+			"subclassSource": "FFXIV",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Soul Voice feature}",
+				"Beginning at 15th level, the effective range of your Minstrel's Song is increased to a 60ft. radius."
+			]
+		},
+		{
+			"name": "Shadowpoint",
+			"source": "FFXIV",
+			"page": 45,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadowpoint",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"entries": [
+				"Shadowpoints are specialized bards who have excel at debilitating their foes with dangerous, homemade poisons which they deliver via their weapons.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arrow Bites|Gridanian Bard|FFXIV|Shadowpoint|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Arrow Bites",
+			"source": "FFXIV",
+			"page": 46,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadowpoint",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Shadowpoint feature}",
+				"Beginning at 3rd level, you gain proficiency with the poisoner's kit.",
+				"Additionally, you have learned how to create simple poisons called bites out of easily accessible materials. As a bonus action, one dose of can be applied to ten arrow heads or a single weapon and remain effective for one minute. When you complete a long rest, you create a fresh batch of bites which remain potent for 24 hours after their creation. You are able to create two types of poison at 3rd level and decide how many of each poison you make in a batch.",
+				"A creature struck with a weapon doused in this poison takes bonus 1d4 poison damage. The creature must succeed on a Constitution saving throw against your Bard spell save DC or suffer an additional effect based on the poison used.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Venomous Bite",
+							"entries": [
+								"The creature becomes poisoned and at the start of their turn they take 1d4 poison damage for 1 minute. The creature may use its action to reattempt the saving throw on its turn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Wind Bite",
+							"entries": [
+								"The creature becomes poisoned and their speed is reduced by 10ft for 1 minute. The creature may use its action to reattempt the saving throw on its turn."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Degenerative Toxicity",
+			"source": "FFXIV",
+			"page": 46,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadowpoint",
+			"subclassSource": "FFXIV",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Shadowpoint feature}",
+				"Beginning at 7th level, you gain resistance to poison damage.",
+				"Additionally, when a creature makes a saving throw against your bite poisons, the save DC difficulty is increased by half your proficiency bonus rounded up."
+			]
+		},
+		{
+			"name": "Advanced Toxins",
+			"source": "FFXIV",
+			"page": 46,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadowpoint",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11rd-level Shadowpoint feature}",
+				"Beginning at 11th level, you have learned to concentrate your poisons. When creating a batch of bites, you may combine two dosages into a single dose to create new poisons. These bites have the following additional effects.",
+				"Additionally, you have learned how to create simple poisons called bites out of easily accessible materials. As a bonus action, one dose of can be applied to ten arrow heads or a single weapon and remain effective for one minute. When you complete a long rest, you create a fresh batch of bites which remain potent for 24 hours after their creation. You are able to create two types of poison at 3rd level and decide how many of each poison you make in a batch.",
+				"A creature struck with a weapon doused in this poison takes bonus 1d4 poison damage. The creature must succeed on a Constitution saving throw against your Bard spell save DC or suffer an additional effect based on the poison used.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Caustic Bite",
+							"entries": [
+								"The on hit poison damage is increased to 2d4 poison damage. The creature becomes poisoned, taking 1d4 poison damage at the start of their turn and deals 1d4 less damage on their damage rolls. The creature may use its action to reattempt the saving throw on its turn."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Shadow Bite",
+							"entries": [
+								"The creature becomes poisoned and unable to speak for one minute. The creature is unable to reattempt the saving throw to overcome this poison."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Storm Bite",
+							"entries": [
+								"The creature becomes poisoned and paralyzed. The creature may use its action to reattempt the saving throw on its turn."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fever Pitch",
+			"source": "FFXIV",
+			"page": 46,
+			"className": "Gridanian Bard",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadowpoint",
+			"subclassSource": "FFXIV",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Shadowpoint feature}",
+				"Beginning at 15th level, when a creature is poisoned by your caustic, shadow or storm bite, they become deliriously feverish. At the start of the creature's turn they must succeed on a Wisdom saving throw against your bard spell save DC, becoming stunned until the end of their turn. A creature who succeeds on this saving throw becomes immune to this effect for 1 hour.",
+				"Additionally, at the start of a poisoned creature's turn it takes 2d6 necrotic damage."
+			]
+		}
+	]
+}

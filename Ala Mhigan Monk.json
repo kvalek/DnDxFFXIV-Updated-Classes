@@ -1,0 +1,1444 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FFXIV",
+				"abbreviation": "FFXIV5E",
+				"full": "5th Edition D&D x Final Fantasy XIV - Ala Mhigan Monk",
+				"authors": [
+					"SilentSoren"
+				],
+				"convertedBy": [
+					"hockeykvalek"
+				],
+				"url": "https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv",
+				"version": "Before The Fall Edition",
+				"color": "867d5a"
+			}
+		],
+		"optionalFeatureTypes": {
+			"AM": "Ala Mhigan Monk Monastic Artes",
+			"AM:ME": "Ala Mhigan Monk Monastic Artes; Riddle of Earth",
+			"AM:MF": "Ala Mhigan Monk Monastic Artes; Riddle of Fire",
+			"AM:MW": "Ala Mhigan Monk Monastic Artes; Riddle of Wind"
+		},
+		"dateAdded": 1957561783,
+		"dateLastModified": 1957561783,
+		"_dateLastModifiedHash": "3a915b08b7"
+	},
+	"subclass": [
+		{
+			"name": "Riddle of Earth",
+			"source": "FFXIV",
+			"page": 6,
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"shortName": "Earth",
+			"subclassFeatures": [
+				"Riddle of Earth|Ala Mhigan Monk|FFXIV|Earth|FFXIV|3",
+				"Lore of the Land|Ala Mhigan Monk|FFXIV|Earth|FFXIV|6",
+				"Earth's Reply|Ala Mhigan Monk|FFXIV|Earth|FFXIV|11",
+				"Heart of Solid Earth|Ala Mhigan Monk|FFXIV|Earth|FFXIV|17"
+			]
+		},
+		{
+			"name": "Riddle of Fire",
+			"source": "FFXIV",
+			"page": 6,
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"shortName": "Fire",
+			"subclassFeatures": [
+				"Riddle of Fire|Ala Mhigan Monk|FFXIV|Fire|FFXIV|3",
+				"Chakra Candle|Ala Mhigan Monk|FFXIV|Fire|FFXIV|6",
+				"Inferno Strikes|Ala Mhigan Monk|FFXIV|Fire|FFXIV|11",
+				"Heart of Raging Flames|Ala Mhigan Monk|FFXIV|Fire|FFXIV|17"
+			]
+		},
+		{
+			"name": "Riddle of Wind",
+			"source": "FFXIV",
+			"page": 6,
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"shortName": "Wind",
+			"subclassFeatures": [
+				"Riddle of Wind|Ala Mhigan Monk|FFXIV|Wind|FFXIV|3",
+				"Featherfoot|Ala Mhigan Monk|FFXIV|Wind|FFXIV|6",
+				"Mantra|Ala Mhigan Monk|FFXIV|Wind|FFXIV|11",
+				"Heart of Soothing Winds|Ala Mhigan Monk|FFXIV|Wind|FFXIV|17"
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Ala Mhigan Monk",
+			"source": "FFXIV",
+			"page": 86,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"history",
+								"insight",
+								"religion",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item shortsword|phb} or (b) {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
+					"(a) {@item dart (10)|phb|10 darts}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"shortsword|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"simple",
+						"{@item shortsword|phb|shortswords}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Martial Arts Die"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Unarmored Defense|Ala Mhigan Monk|FFXIV|1",
+				"Martial Arts|Ala Mhigan Monk|FFXIV|1",
+				"Chakra Gate|Ala Mhigan Monk|FFXIV|2",
+				"Monastic Artes|Ala Mhigan Monk|FFXIV|2",
+				{
+					"classFeature": "Ala Mhigan Monk Archetype|Ala Mhigan Monk|FFXIV|3",
+					"gainSubclassFeature": true
+				},
+				"Elemental Gate|Ala Mhigan Monk|FFXIV|3",
+				"Ability Score Improvement|Ala Mhigan Monk|FFXIV|4",
+				"Extra Attack|Ala Mhigan Monk|FFXIV|5",
+				{
+					"classFeature": "Archetype Feature|Ala Mhigan Monk|FFXIV|6",
+					"gainSubclassFeature": true
+				},
+				"Fists of Rhalgr|Ala Mhigan Monk|FFXIV|6",
+				"Evasion|Ala Mhigan Monk|FFXIV|7",
+				"Ability Score Improvement|Ala Mhigan Monk|FFXIV|8",
+				"Master of Movement|Ala Mhigan Monk|FFXIV|9",
+				"Aura Veil|Ala Mhigan Monk|FFXIV|10",
+				{
+					"classFeature": "Archetype Feature|Ala Mhigan Monk|FFXIV|11",
+					"gainSubclassFeature": true
+				},
+				"Perfect Balance|Ala Mhigan Monk|FFXIV|11",
+				"Ability Score Improvement|Ala Mhigan Monk|FFXIV|12",
+				"Aura Speech|Ala Mhigan Monk|FFXIV|13",
+				"Iron Will|Ala Mhigan Monk|FFXIV|14",
+				"Aura Sense|Ala Mhigan Monk|FFXIV|15",
+				"Ability Score Improvement|Ala Mhigan Monk|FFXIV|16",
+				{
+					"classFeature": "Archetype Feature|Ala Mhigan Monk|FFXIV|17",
+					"gainSubclassFeature": true
+				},
+				"Anatman|Ala Mhigan Monk|FFXIV|18",
+				"Ability Score Improvement|Ala Mhigan Monk|FFXIV|19",
+				"Transcendence|Ala Mhigan Monk|FFXIV|20"
+			],
+			"subclassTitle": "Archetype",
+			"fluff": [
+				{
+					"name": "Ala Mhigan Monk",
+					"source": "FFXIV",
+					"type": "section",
+					"entries": [
+						"A stoic wanderer stands along at the gates of the town he's called home for the night. Invading bandits strike his skin only to find it hard as stone, and his earth shaking blows leave them running in fear.",
+						"A skilled martial artist whose fists sudden become engulfed in flame strikes out against a powerful beast, in search of greater challenges to become the greatest fighter in the world.",
+						"A cheerful traveller walked down the winding paths of a mountainous region, happily going wherever their heart led them, stopping to help those they encountered along the way.",
+						"Monks who train under the Fist of Rhalgr may sharpen their skills in a wide number of ways, from protectors, to travellers to those who seek glory, monks of this sacred tradition use the power drawn from within their bodies, chakra, to perform powerful martial arts and superhuman feats.",
+						{
+							"name": "Guided By A Falling Star",
+							"type": "entries",
+							"entries": [
+								"Centuries ago, refugees of the great flood were lead to safety by their god, Rhalgr the Destory using a meteorite to guide them to the Gyr Albanian highlands. It was here they would plant their roots and an order of devotees to this god, The Fist of Rhalgr would be formed. Monks of the Fist of Rhalgr trained their bodies and spirits to become closer to their god and discovered the life energy of chakra through this training. Eventually they'd find themselves as a key military force in Gyr Albania until political upheaval and civil war caused their order to be broken and scattered to the wind."
+							]
+						},
+						{
+							"name": "By Their Hands",
+							"type": "entries",
+							"entries": [
+								"The primary way of doing battle for the Fist of Rhalgr is with their fists, sometimes augmented with claws, knuckles, tonfas and other hand accessories to assist their striking. Some choosing to weave staves, spears or blades into their fighting style alongside becoming masters of unarmed combat."
+							]
+						},
+						{
+							"name": "Creating an Ala Mhigan Monk",
+							"type": "entries",
+							"entries": [
+								"When creating a monk consider where you've received your training. Have you trained directly under a master of the Fist of Rhalgr? Perhaps you have called a monastery home for a time, or through meditation and intense training you've unlocked these secrets for yourself. You must also consider your path, as there are three elemental Riddles which define the path you walk as a monk. How might your temperament and goals tie into your training? Whether training alone or alongside other students, those who train under the Fist of Rhalgr spend a good deal meditating on their place int he world and where they are going next."
+							]
+						},
+						{
+							"name": "Quick Build",
+							"type": "entries",
+							"entries": [
+								"You can make an Ala Mhigan Monk quickly by following these suggestions. First make Dexterity your highest ability score, following with Wisdom. Second, choose the {@background hermit} background."
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Unarmored Defense",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Martial Arts",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 86,
+			"level": 1,
+			"entries": [
+				"At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property.",
+				"You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield:",
+				"You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.",
+				"You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.",
+				"When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn."
+			]
+		},
+		{
+			"name": "Chakra Gate",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 2,
+			"entries": [
+				"Starting at 2nd level, you learn to open chakra gates in your body, giving you a sharp increase in your physical ability. As a bonus action, you may open a chakra gate, granting you a number of chakra charges equal to your Wisdom modifier.",
+				"These charges persist in your body until you complete a short or long rest, or until you open the chakra gate again. You may use Chakra Gate a number of times equal to your proficiency bonus. Your uses of the Chakra Gate feature refresh when you complete a short or long rest."
+			]
+		},
+		{
+			"name": "Monastic Artes",
+			"source": "FFXIV",
+			"page": 68,
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"level": 2,
+			"entries": [
+				"As part of your monk training, you have learned a variety of special techniques that make use of the chakra flowing through your body. Various Monastic Artes require use of different types of chakra to activate.",
+				"Some of your Monastic Artes may require your target to make a saving throw against the attack or work in a similar way to spell casting. For such effects use the following calculations:",
+				{
+					"type": "abilityDc",
+					"name": "Monastic Artes",
+					"attributes": [
+						"wis"
+					]
+				},
+				{
+					"type": "abilityAttackMod",
+					"name": "Monastic Artes",
+					"attributes": [
+						"wis"
+					]
+				},
+				"You can find a list of Monastic Artes at the end of the class description."
+			]
+		},
+		{
+			"name": "Elemental Gate",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 3,
+			"entries": [
+				"Also starting at 3rd level, your rumination on an elemental riddle has awakened a second chakra gate in your body. As a bonus action, you may open the elemental chakra gate, granting you a number of elemental chakra equal to your Wisdom modifier.",
+				"These charges persist in your body until you complete a long rest, or until you open the elemental chakra gate again. You may use elemental gate a number of times equal to your proficiency bonus. Your uses of the Elemental Gate feature refresh when you complete long rest."
+			]
+		},
+		{
+			"name": "Ala Mhigan Monk Archetype",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, you have selected your elemental Riddle you consider while meditating that guides your path as a monk. You select between the Riddle of Earth, Riddle of Fire or Riddle of Wind, detailed at the end of the class description or one from another source. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Ala Mhigan Monk Archetype."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain a feature granted by your Ala Mhigan Monk Archetype."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain a feature granted by your Ala Mhigan Monk Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Fists of Rhalgr",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 7,
+			"entries": [
+				"At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+			]
+		},
+		{
+			"name": "Master of Movement",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 9,
+			"entries": [
+				"Starting at 9th level, when you make a Athletics (Strength) or Acrobatics (Dexterity) skill check, you may spend one chakra charge to gain advantage on the roll."
+			]
+		},
+		{
+			"name": "Aura Veil",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 10,
+			"entries": [
+				"Starting at 10th level, when you take damage, you may spend any number of Chakra and Element charges. You gain temporary hit points equal to the amount of charges spent. These hit points are gained prior to applying the damage."
+			]
+		},
+		{
+			"name": "Perfect Balance",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 87,
+			"level": 11,
+			"entries": [
+				"Beginning at 11th level, you've learned to open a third powerful chakra gate in your body. As a bonus action you gain a number of Perfect Balance chakra charges equal to your Wisdom modifier. These charges can be used for specific Monastic Artes and as a replacement for the cost of Chakra or Element charges.",
+				"These charges persist in your body until you complete a long rest. Use of the Perfect Balance feature refreshes when you complete a long rest."
+			]
+		},
+		{
+			"name": "Aura Speech",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 88,
+			"level": 13,
+			"entries": [
+				"Starting at 13th level, you have learned to make an aetherial connect with the minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say."
+			]
+		},
+		{
+			"name": "Iron Will",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 88,
+			"level": 14,
+			"entries": [
+				"Starting at 14th level, your mastery of chakra grants you proficiency in all saving throws.",
+				"Additionally, whenever you make a saving throw and fail, you can spend 1 chakra charge to reroll it and take the second result."
+			]
+		},
+		{
+			"name": "Aura Sense",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 88,
+			"level": 15,
+			"entries": [
+				"Starting at 15th level, you can feel the aura of those around you. You gain 10ft. of blindsight."
+			]
+		},
+		{
+			"name": "Anatman",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 88,
+			"level": 18,
+			"entries": [
+				"Starting at 18th level, your ability to channel chakra is unrivaled. When you use the Chakra Gate, Elemental Gate or Perfect Balance feature, you gain one additional charge."
+			]
+		},
+		{
+			"name": "Transcendence",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"page": 88,
+			"level": 20,
+			"entries": [
+				"Beginning at 20th level, you have mastered your ability to open your chakra gates. As a bonus action, you gain the benefit of your Chakra Gate, Elemental Gate and Perfect Balance features. You may use Transcendence once, use of this feature refreshing when you complete a long rest."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Riddle of Earth",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Earth",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 88,
+			"entries": [
+				"Monks who ruminate on the Riddle of Earth focus on the relationship between humanity and the natural world, and the unmoving truths of the world. Their fighting style also emulates the stoicism of the earth, the monk developing a solid defensive approach to combat.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Stone Skin|Ala Mhigan Monk|FFXIV|Earth|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Stone Skin",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Earth",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 88,
+			"header": 1,
+			"entries": [
+				"{@i 3nd-level Riddle of Earth feature}",
+				"Beginning at 3rd level, while you have charges of Elemental chakra, when you are hit by an attack, you may expend one chakra to gain resistance to slashing, piercing and bludgeoning damage until the start of your next turn."
+			]
+		},
+		{
+			"name": "Lore of the Land",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Earth",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 88,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Riddle of Earth feature}",
+				"At 6th level, your meditations have lead you to a deep understanding of the natural world. You gain proficiency in the Nature skill."
+			]
+		},
+		{
+			"name": "Earth's Reply",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Earth",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"page": 88,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Riddle of Earth feature}",
+				"Beginning at 11th level, when you take damage from a creature that you can see within 30ft. of you, as a reaction you may spend one elemental chakra to release chakra in a concussive burst at their location. The creature must make a Strength saving throw. It takes 2d10 magical bludgeoning damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"name": "Heart of Solid Earth",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Earth",
+			"subclassSource": "FFXIV",
+			"level": 17,
+			"page": 88,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Riddle of Earth feature}",
+				"At 17th level, you've learned to create a perfect defensive technique with your chakra. As a bonus action, you may spend 1 perfect balance chakra and spend a number of hit points up to or equal to your monk level to create a protective layer of vitality that coats your body.",
+				"This protective layer has a number of hit points equal to the number spent and takes damage in place of you when you take damage. This layer is protected by temporary hit points. This protective layer cannot receive healing and when it is reduced to 0 hit points it fades away, but any excess damage is not applied.",
+				"You may create this protective layer once. Use of this feature refreshes when you complete a long rest."
+			]
+		},
+		{
+			"name": "Riddle of Fire",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Fire",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 88,
+			"entries": [
+				"The Monks who focus their meditations of the Riddle of Fire are focused on the pursuit of passion and the power that comes from within themselves. These monks are the movers and shakers of their world, seeking challenges and adventures to sharpen their skills and ever seeking a new challenge.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fists of Fire|Ala Mhigan Monk|FFXIV|Fire|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Fists of Fire",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Fire",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 88,
+			"header": 1,
+			"entries": [
+				"{@i 3nd-level Riddle of Fire feature}",
+				"Beginning at 3rd level, when you hit a creature with an unarmed weapon attack, you may expend one Chakra Charge or Elemental Charge to deal an additional damage die of fire damage to the target creature."
+			]
+		},
+		{
+			"name": "Chakra Candle",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Fire",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 88,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Riddle of Fire feature}",
+				"At 6th level, as an action you can spend an Elemental Chakra to create a small white flame whose light highlights hidden objects. The flame persists for 1 minute in place, hovering five feet off the ground. It emits a 10ft. radius of bright light and an additional 10ft. of dim light. Hidden objects or passages within 10ft. of the flame are outlined with a thin line of light.",
+				"An invisible creature that comes within 10ft. of the chakra candle must make a Charisma saving throw against your Monastic Artes DC, and on a failure their body is outlined in light. The creature is immune to this effect on a success."
+			]
+		},
+		{
+			"name": "Inferno Strikes",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Fire",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"page": 88,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Riddle of Fire feature}",
+				"Beginning at 11th level, when you use Fists of Fire, you may spend an additional Elemental Charge to force all creatures within 10ft. of the target to make a Dexterity saving throw against your Monastic Artes DC, taking damage equal to the target of your unarmed strike on a failure and half as much on a success."
+			]
+		},
+		{
+			"name": "Heart of Raging Flames",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Fire",
+			"subclassSource": "FFXIV",
+			"level": 17,
+			"page": 89,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Riddle of Fire feature}",
+				"At 17th level, you've learned to ignite the chakra around your body. As a bonus action you cloak yourself in flames for one minute. When a hostile creature enters a space within 5ft. of you they take 5 fire damage. When you start your turn any hostile creature within 5ft. of you takes 5 fire damage.",
+				"While you are cloaked in flames, as an action you may expend a number of hit die up to or equal to your Wisdom ability modifier. Roll the expended die and recover hit points equal to the result.",
+				"You may enter this state once, use of this feature refreshes when you complete a long rest."
+			]
+		},
+		{
+			"name": "Riddle of Wind",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Wind",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 89,
+			"entries": [
+				"Those who ruminate on the Riddle of Wind are travelers and wanderers. They're always in motion and let their adventures guide them without a long term goal in mind. To these monk life is what happens to you as your make your way through your days, and its important to be adaptable and help out where you can.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Second Wind Infusion|Ala Mhigan Monk|FFXIV|Wind|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Second Wind Infusion",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Wind",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 89,
+			"header": 1,
+			"entries": [
+				"{@i 3nd-level Riddle of Wind feature}",
+				"Beginning at 3rd level, you learn to manipulate chakra to heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your monk level times 5.",
+				"As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
+				"Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Second Wind Infusion, expending hit points separately for each one.",
+				"This feature has no effect on undead and constructs."
+			]
+		},
+		{
+			"name": "Featherfoot",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Wind",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 89,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Riddle of Wind feature}",
+				"At 6th level, your base movement speed is increased by 10 feet. Your jumping height and distance is increased by 10 feet as well."
+			]
+		},
+		{
+			"name": "Mantra",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Wind",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"page": 89,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Riddle of Wind feature}",
+				"Beginning at 11th level, as an action you have learned to heal multiple creatures around you at once. You may heal a number of creatures up to a number equal to your proficiency bonus within 10ft. of you using healing power from your Second Wind Infusion pool."
+			]
+		},
+		{
+			"name": "Heart of Soothing Winds",
+			"source": "FFXIV",
+			"className": "Ala Mhigan Monk",
+			"classSource": "FFXIV",
+			"subclassShortName": "Wind",
+			"subclassSource": "FFXIV",
+			"level": 17,
+			"page": 89,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Riddle of Wind feature}",
+				"At 17th level, you have mastered the art of manipulating chakra to emulate the element of wind. As a bonus action you enter an awakened state gaining a flying speed equal to your walking speed for one minute.",
+				"You can enter this state once, use of this feature refreshing when you complete a long rest."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Arm of the Destroyer",
+			"source": "FFXIV",
+			"page": 89,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Element Charges",
+				"As an action, you cast the {@spell earth tremor|xge} spell at 1st level. You may spend additional Element Charges to increase the casting level of the spell by one for each additional charge spent."
+			],
+			"featureType": [
+				"AM:ME"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"earth tremor|xge"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Brotherhood",
+			"source": "FFXIV",
+			"page": 89,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Perfect Balance Charge, 3 Element Charges",
+				"As a bonus action, you use your mastery of chakra to protect your allies. You infuse a number of creatures up to your Wisdom modifier with a protective ward. Each creature gains 1d10 + your Wisdom modifier temporary hit points. While they are protected by these temporary hit points they have a +3 bonus to AC."
+			],
+			"featureType": [
+				"AM:ME"
+			]
+		},
+		{
+			"name": "Celestial Revolution",
+			"source": "FFXIV",
+			"page": 89,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Perfect Balance Charge, 3 Element Charges",
+				"You attempt to make a devastating blow that allows you to vanish in the blink of the eye. When you hit another creature with a melee weapon attack. you can spend the chakra cost to deal 6d8 thunder damage, you then teleport up to 60 feet to an unoccupied space that you can see."
+			],
+			"featureType": [
+				"AM:MW"
+			]
+		},
+		{
+			"name": "Chakra Shot",
+			"source": "FFXIV",
+			"page": 89,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Chakra Charge",
+				"As an action, you concentrate chakra in the palm of your hand and make a ranged Monastic Arte attack against a creature within 60ft. of you. This attack deals force damage equal to your Martial Arts die + your Wisdom modifier."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Demolish",
+			"source": "FFXIV",
+			"page": 89,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6
+					}
+				}
+			],
+			"entries": [
+				"Cost: 3 Element Charges",
+				"When you hit another creature with a melee weapon attack, you can spend the chakra cost to attempt to shatter the target's defenses. The creature must succeed on a Constitution saving throw. On a failure, attack rolls against the creature gain a +2 bonus until the start of your next turn, on a success no additional effects happen."
+			],
+			"featureType": [
+				"AM:ME"
+			]
+		},
+		{
+			"name": "Dragon Kick",
+			"source": "FFXIV",
+			"page": 89,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"Cost: 3 Chakra Charges",
+				"When you hit another creature with a melee weapon attack. you can spend the chakra cost to enter a heightened state. Until the start of your next turn, you add your Wisdom modifier to your unarmed strike damage rolls."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Elixir Field",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Perfect Balance Change, 3 Chakra Charges",
+				"As an action, you bathe a 20ft. radius sphere around you in a wave of chakra. All creatures in the affected area must make a Dexterity saving throw or take 6d6 force damage and be blinded for 1 minute, taking half damage and not becoming blinded on a success."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Enlightenment",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Perfect Balance Change, 3 Chakra Charges",
+				"As an action, you concentrate chakra into your arms and release it in a wide ray which is 15ft. wide and 60ft. long. All creatures in the affected range make a Dexterity saving throw or take 6d8 force damage, and half as much on a success."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Flash Fire",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Element Charges",
+				"As an action, you cast the {@spell burning hands} spell at 1st level. You may spend additional Element Charges to increase the casting level of the spell by one for each additional charge spent."
+			],
+			"featureType": [
+				"AM:MF"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"burning hands"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Flint Strike",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
+			"entries": [
+				"Cost: 3 Element Charges",
+				"As an action, you unleash a powerful axe kick which scorches nearby enemies with fiery chakra. Each creature in a 20ft. radius circle around you must succeed on a Dexterity saving throw or take 8d6 Fire damage, and half as much on a success.",
+				"The affected area is left ignited in chakra infused flames for 1 minute. These flames do not have any effect on you but when a creature enters the flames or starts their turn within them, they take 2d4 fire damage."
+			],
+			"featureType": [
+				"AM:MF"
+			]
+		},
+		{
+			"name": "Greased Lightning",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Chakra Charge",
+				"Immediately after you take the Attack action or perform a Monastic Arte as an action, you make two unarmed strikes as a bonus action."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Howling Fist",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Element Charges",
+				"As an action you unleash a bursting wave of chakra in a 5ft. wide, 60ft long line from your fist. Each creature in the affected area succeed on a Dexterity saving throw or take 3d8 fire damage and be knocked prone. On a success the creature takes half as much damage and is not knocked prone."
+			],
+			"featureType": [
+				"AM:MF"
+			]
+		},
+		{
+			"name": "Phantom Rush",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18
+					}
+				}
+			],
+			"entries": [
+				"Cost: 3 Perfect Balance Charges",
+				"As an action, you spend any number of Chakra Charges or Elemental Charges to unleash a blinding flurry of blows against a creature within 30ft. of you that you can see. For each charge spent, you make one unarmed strike. Afterwards you appear in an unoccupied space adjacent to the target creature."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Rising Phoenix",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Perfect Balance Charge, 3 Element Charges",
+				"You release blazing chakra around yourself in a 30ft. radius sphere creating phoenix flames that both wound and heal. For each creature in the affected area you decide how the flames affect them.",
+				"Heal. The affected creature recovers 1d8 + your Wisdom modifier hit points.",
+				"Wound. The affected creature must succeed on a Dexterity saving throw, taking 8d8 + your Wisdom modifier fire damage and half as much on a success."
+			],
+			"featureType": [
+				"AM:MF"
+			]
+		},
+		{
+			"name": "Rockbreaker",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Perfect Balance Charge, 3 Element Charges",
+				"As an action you let loose a concussive blast of focused chakra capable of shattering stone in a 30ft. cone. Each creature in range must make a Strength saving throw, taking 4d8 magical bludgeoning damage and be either knocked back 30ft. or knocked prone, your choice."
+			],
+			"featureType": [
+				"AM:ME"
+			]
+		},
+		{
+			"name": "Steel Peak",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Chakra Charges",
+				"When you hit another creature with a melee weapon attack you can spend the chakra cost to attempt to leave the creature dazed. The creature must succeed on a strength saving throw or be stunned until the start of your next turn."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Six-Sided Star",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Chakra Charge",
+				"When you hit another creature with a melee weapon attack you can spend the chakra cost to become more nimble for a moment. Until the end of your current turn, you may use the Disengage action as a bonus action."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Snap Punch",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Chakra Charges",
+				"When a creature enters a space within 5ft. of you, as a reaction you may make one unarmed strike against that creature."
+			],
+			"featureType": [
+				"AM"
+			]
+		},
+		{
+			"name": "Tailwind",
+			"source": "FFXIV",
+			"page": 91,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Element Charges",
+				"As an action, you cast the Longstrider or Jump spell targeting yourself."
+			],
+			"featureType": [
+				"AM:MW"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"a": [
+							"longstrider"
+						]
+					}
+				},
+				{
+					"innate": {
+						"b": [
+							"jump"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Thunderclap",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6
+					}
+				}
+			],
+			"entries": [
+				"Cost: 3 Chakra Charges",
+				"As a bonus action, you teleport up to 30 feet to an unoccupied space that you can see."
+			],
+			"featureType": [
+				"AM:MW"
+			]
+		},
+		{
+			"name": "Tornado Kick",
+			"source": "FFXIV",
+			"page": 90,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					}
+				}
+			],
+			"entries": [
+				"Cost: 3 Element Charges",
+				"As an action, you create a vacuum wave that affects all creatures in a 20ft. radius sphere around you. Each creature in the affected area must succeed on a Strength saving throw or take 5d8 thunder damage and be knocked back 30ft. from you. On a success, the creature takes half damage and are not knocked back."
+			],
+			"featureType": [
+				"AM:MW"
+			]
+		}
+	]
+}

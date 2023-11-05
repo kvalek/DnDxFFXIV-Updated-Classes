@@ -1,0 +1,1118 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FFXIV",
+				"abbreviation": "FFXIV5E",
+				"full": "5th Edition D&D x Final Fantasy XIV - Sultansworn Paladin",
+				"authors": [
+					"SilentSoren"
+				],
+				"convertedBy": [
+					"hockeykvalek"
+				],
+				"url": "https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv",
+				"version": "Before The Fall Edition",
+				"color": "867d5a"
+			}
+		],
+		"dateAdded": 1957561782,
+		"dateLastModified": 1957561782,
+		"_dateLastModifiedHash": "3a915b08b7"
+	},
+	"subclass": [
+		{
+			"name": "Arms Master",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 7,
+			"shortName": "Arms Master",
+			"subclassFeatures": [
+				"Arms Master|Sultansworn Paladin|FFXIV|Arms Master|FFXIV|3",
+				"Aura of Valor|Sultansworn Paladin|FFXIV|Arms Master|FFXIV|6",
+				"Rage of Halone|Sultansworn Paladin|FFXIV|Arms Master|FFXIV|10",
+				"Spirits Within|Sultansworn Paladin|FFXIV|Arms Master|FFXIV|14"
+			]
+		},
+		{
+			"name": "Great Knight",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 7,
+			"shortName": "Great Knight",
+			"subclassFeatures": [
+				"Great Knight|Sultansworn Paladin|FFXIV|Great Knight|FFXIV|3",
+				"Aura of Truth|Sultansworn Paladin|FFXIV|Great Knight|FFXIV|6",
+				"Sentinel|Sultansworn Paladin|FFXIV|Great Knight|FFXIV|10",
+				"Passage of Arms|Sultansworn Paladin|FFXIV|Great Knight|FFXIV|14"
+			]
+		},
+		{
+			"name": "Crusader",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 7,
+			"shortName": "Crusader",
+			"subclassFeatures": [
+				"Crusader|Sultansworn Paladin|FFXIV|Crusader|FFXIV|3",
+				"Aura of Faith|Sultansworn Paladin|FFXIV|Crusader|FFXIV|6",
+				"Chivalrous Casting|Sultansworn Paladin|FFXIV|Crusader|FFXIV|10",
+				"Requiescat|Sultansworn Paladin|FFXIV|Crusader|FFXIV|14"
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Sultansworn Paladin",
+			"source": "FFXIV",
+			"preparedSpells": "<$level$> / 2 + <$cha_mod$>",
+			"page": 98,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"cha",
+				"con"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"heavy",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"insight",
+								"intimidation",
+								"medicine",
+								"persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and {@item shield|phb} or (b) two {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
+					"(a) 5 {@item javelin|phb|javelins} or (b) a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) {@item explorer's pack|phb} or (b) an {@item dungeoneer's pack|phb}",
+					"(a) {@item chain shirt|PHB} and a holy symbol related to your home region"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "javelin|phb",
+								"quantity": 5
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"chain shirt|phb",
+							"holy symbol|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"{@item shield|phb|shields}"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Sultansworn Paladin (FFXIV5E)}",
+						"{@filter 2nd|spells|level=2|class=Sultansworn Paladin (FFXIV5E)}",
+						"{@filter 3rd|spells|level=3|class=Sultansworn Paladin (FFXIV5E)}",
+						"{@filter 4th|spells|level=4|class=Sultansworn Paladin (FFXIV5E)}",
+						"{@filter 5th|spells|level=5|class=Sultansworn Paladin (FFXIV5E)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Aetherial Arms|Sultansworn Paladin|FFXIV|1",
+				"Sworn Protector|Sultansworn Paladin|FFXIV|1",
+				"Fighting Style|Sultansworn Paladin|FFXIV|2",
+				"Spellcasting|Sultansworn Paladin|FFXIV|2",
+				{
+					"classFeature": "Sultansworn Paladin Archetype|Sultansworn Paladin|FFXIV|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Sultansworn Paladin|FFXIV|4",
+				"Extra Attack|Sultansworn Paladin|FFXIV|5",
+				{
+					"classFeature": "Archetype Feature|Sultansworn Paladin|FFXIV|6",
+					"gainSubclassFeature": true
+				},
+				"Aura of Intervention|Sultansworn Paladin|FFXIV|7",
+				"Ability Score Improvement|Sultansworn Paladin|FFXIV|8",
+				"Seasoned Fighting Style|Sultansworn Paladin|FFXIV|11",
+				{
+					"classFeature": "Archetype Feature|Sultansworn Paladin|FFXIV|10",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Sultansworn Paladin|FFXIV|12",
+				{
+					"classFeature": "Archetype Feature|Sultansworn Paladin|FFXIV|14",
+					"gainSubclassFeature": true
+				},
+				"Spell and Steel|Sultansworn Paladin|FFXIV|15",				
+				"Ability Score Improvement|Sultansworn Paladin|FFXIV|16",
+				"Knight's Benediction|Sultansworn Paladin|FFXIV|18",
+				"Ability Score Improvement|Sultansworn Paladin|FFXIV|19",
+				"Unending Conviction|Sultansworn Paladin|FFXIV|20"
+			],
+			"subclassTitle": "Archetype",
+			"fluff": [
+				{
+					"type": "section",
+					"name": "Sultansworn Paladin",
+					"source": "FFXIV",
+					"page": 1,
+					"entries": [
+						"With a blade enshrouded in gleaming light, the knight dashed forward, cutting into the dark creature who has been roaming the country side. After a few skilled swings of their blade the foes fell to the earth.",
+						"A noble smiles up at their attending knight as they walked the streets of their domain. An outsider attempting to weaken the land attempts to make their mark, shooting an arrow from above, without a second thought the knight steps in the way of the arrow, the attack clanking off their armor.",
+						"Dressed in armour and white robes, the adventurer clutches their holy symbol can their incantations give their convictions form as divine line shines down on their foes all around.",
+						"Paladins are skilled fighters who have learned to infuse their very will into their weapons and armour, allowing them to fight far beyond their limits.",
+						{
+							"type": "entries",
+							"name": "Conviction Made Manifest",
+							"page": 1,
+							"entries": [
+								"The Sultansworn Paladins first appeared in defense of their leader in the early days of their city state of Ul'Dah. One knight's deep conviction to protect their people allowed them to fuse their life force into their shield to block a deadly blow from an enemy mage in defense of innocence. This infusion of aether into armaments has become the corner stone of paladin arts."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Divine Words and Sacred Steel",
+							"page": 1,
+							"entries": [
+								"Paladins are known for their immense defensive potential, often seen wield swords and shields, and draped in heavy armour for protection, they are immovable fighters. This peerless defense is coupled with divine incantations to cast spells that reflect their pure intentions, powered purely by their conviction to carry out their duty."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Paladin",
+							"page": 1,
+							"entries": [
+								"Paladins come from many walks of life, be it rank and file soldiers who awaken to these power, intentionally trained warriors, or hometown heroes who accidentally stumbled on the sacred arts themselves thanks to their own force of will. Often times a Paladin will have some sort of mentor figure to lean on and learn from but it isn't neccessary as a particularly skilled paladin could teach themselves as they explore their powers. At the end of the day, paladins draw their power from their own force of will and must live or die by it. One must consider why the Paladin might be setting off on an adventure. Are they seeking to protect their home? In service of a master, or seeking redemption or revenge. Paladins act with purpose and you must understand what that purpose is."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"page": 1,
+							"entries": [
+								"You can make a Paladin quickly by following these suggestions. First make Strength your highest ability score, following with Charisma. Second take the {@background Soldier} background."
+							]
+						}
+					]
+				}
+			],
+			"classSpells": [
+				"Bless",
+				"Ceremony|xge",
+				"Command",
+				"Compelled Duel",
+				"Cure Wounds",
+				"Detect Evil and Good",
+				"Detect Magic",
+				"Detect Poison and Disease",
+				"Guiding Bolt",
+				"Heroism",
+				"Protection from Evil and Good",
+				"Purify Food and Drink",
+				"Sanctuary",
+				"Searing Smite",
+				"Shield of Faith",
+				"Sleep",
+				"Thunderous Smite",
+				"Wrathful Smite",
+				"Aid",
+				"Branding Smite",
+				"Calm Emotions",
+				"Enhanced Ability",
+				"Find Steed",
+				"Gentle Repose",
+				"Hold Person",
+				"Lesser Restoration",
+				"Locate Object",
+				"Magic Weapon",
+				"Moonbeam",
+				"Prayer of Healing",
+				"Protection from Poison",
+				"See Incisibility",
+				"Warding Bond",
+				"Zone of Truth",
+				"Aura of Vitality",
+				"Beacon of Hope",
+				"Blinding Smite",
+				"Counterspell",
+				"Create Food and Water",
+				"Crusader's Mantle",
+				"Daylight",
+				"Dispel Magic",
+				"Elemental Weapon",
+				"Haste",
+				"Magic Circle",
+				"Nondetection",
+				"Protection from Energy",
+				"Remove Curse",
+				"Revivify",
+				"Spirit Shroud|tce",
+				"Aura of Life",
+				"Aura of Purity",
+				"Banishment",
+				"Compulsion",
+				"Death Ward",
+				"Find Greater Steed|xge",
+				"Freedom of Movement",
+				"Guardian of Faith",
+				"Locate Creature",
+				"Otiluke's Resilient Sphere",
+				"Staggering Smite",
+				"Stoneskin",
+				"Banishing Smite",
+				"Circle of Power",
+				"Commune",
+				"Destructive Wave",
+				"Dispel Evil and Good",
+				"Flame Strike",
+				"Geas",
+				"Hold Monster",
+				"holy weapon|xge",
+				"Scrying",
+				"Wall of Force"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "1/2"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Aetherial Arms",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 100,
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, you are able to fill your equipment with aether to assist you in battle. As a bonus action you can focus your aether into your weapon, shield or armour to produce various effects:",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Weapon",
+							"entries": [
+								"For 1 minute you, attacks with your weapon deal bonus radiant damage equal to your proficiency bonus."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Shield",
+							"entries": [
+								"For 1 minute your AC gains a bonus equal to half your proficiency bonus (rounded down)."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Armor",
+							"entries": [
+								"For 1 minute when you take damage, it is reduced by a number equal to your proficiency bonus."
+							]
+						}
+					]
+				},
+				"You can infuse your weapons with aether a number of times equal to your proficiency bonus. Uses of this feature are refreshed when you complete a long rest."
+			]
+		},
+		{
+			"name": "Sworn Protector",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 100,
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, as a bonus action you swear an oath of protection to an ally within 10ft. of you, filling them with protective aether. While you are within 10ft. of the creature they have resistance to all damage, but when they take damage, you receive the same amount of damage. On your turn, you can use your bonus action to end this oath or change the target of the oath."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 86,
+			"level": 2,
+			"entries": [
+				"Beginning at 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blessed Warrior|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blind Fighting|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defense"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Great Weapon Fighting"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Interception|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Protection"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 2,
+			"entries": [
+				"By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does.",
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"page": 101,
+					"entries": [
+						"The Paladin table shows how many spell slots you have to cast your paladin spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+						"For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"page": 101,
+					"entries": [
+						"Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"page": 101,
+					"entries": [
+						"You can use a holy symbol as a spellcasting focus for your paladin spells."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sultansworn Paladin Archetype",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 3,
+			"entries": [
+				"At 3rd level, you choose your paladin's martial devotion. You choose between the Arms Master, Great Knight or Crusader. Your devotion grants you features at 3rd level and again at 6th, 10th, and 14th level."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Sultansworn Paladin Archetype."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature granted by your Sultansworn Paladin Archetype."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature granted by your Sultansworn Paladin Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Aura of Intervention",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 7,
+			"entries": [
+				"Beginning at 7th level, you constantly emanate a benevolent aura while you're not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover.",
+				"When an allied creature is reduced to 0 hit points while in your aura, as a reaction you can reinforce their will. They drop to 1 hit point instead. They can’t benefit from this feature again until they finish a long rest.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Seasoned Fighting Style",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 11,
+			"entries": [
+				"Beginning at 11th level, you can choose a second option from the Fighting Style class feature.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blessed Warrior|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blind Fighting|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defense"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Great Weapon Fighting"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Interception|TCE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Protection"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spell and Steel",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 15,
+			"entries": [
+				"Beginning at 15th level, when you cast a spell, you may use your bonus action to make a melee weapon attack."
+			]
+		},
+		{
+			"name": "Knight's Benediction",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 18,
+			"entries": [
+				"Beginning at 18th level, the strength of your conviction allows you to rapidly recover from wounds. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points."
+			]
+		},
+		{
+			"name": "Unending Conviction",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"page": 101,
+			"level": 20,
+			"entries": [
+				"Beginning at 20th level, when you roll initiative and have no more uses of your aetherial arms feature left, you gain 2 uses of aetherial arms."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Arms Master",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Arms Master",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 102,
+			"entries": [
+				"Seeking to become master of their craft, Arms Masters are warriors at heart who seek make their weapons a natural extensive of themselves. These highly skilled paladins seek to balance their renown defensive ability with unrelenting offense.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sword Oath|Sultansworn Paladin|FFXIV|Arms Master|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Sword Oath",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Arms Master",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 102,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Arms Master feature}",
+				"Beginning at 3rd level, while your Aetherial Arms feature is empowering your weapon it glows with a shining light. The weapons emits bright light in a 20-foot radius and dim light for an additional 20 feet. Additionally, the weapon gains an additional bonus to attack rolls equal to half of your proficiency bonus."
+			]
+		},
+		{
+			"name": "Aura of Valor",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Arms Master",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 102,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Arms Master feature}",
+				"Beginning at 6th level, you constantly emanate a prideful aura while you're not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover.",
+				"Whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Rage of Halone",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Arms Master",
+			"subclassSource": "FFXIV",
+			"level": 10,
+			"page": 102,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Arms Master feature}",
+				"Beginning at 10th level, while your Aetherial Arms feature is empowering your weapon, as a bonus action you may make an attack with it."
+			]
+		},
+		{
+			"name": "Spirits Within",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Arms Master",
+			"subclassSource": "FFXIV",
+			"level": 14,
+			"page": 102,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Arms Master feature}",
+				"Beginning at 14th level, while your Aetherial Arms feature is empowering your weapon, the weapon deals bonus radiant damage equal to your Charisma modifier."
+			]
+		},
+		{
+			"name": "Great Knight",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Great Knight",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 102,
+			"entries": [
+				"The Great Knights are paladins who are fully committed to the original goals of the sultansworn paladins, defense of their liege, their home and their people. The earliest paladins infused their shields with aether to defend the commonfolk and Great Knights hope to elevate this simple principle to ensure their charges live to tell their stories.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shield Oath|Sultansworn Paladin|FFXIV|Great Knight|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Shield Oath",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Great Knight",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 102,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Great Knight feature}",
+				"Beginning at 3rd level, while your Aetherial Arms feature is empowering your shield it glows with a shining light. The shield emits bright light in a 20-foot radius and dim light for an additional 20 feet. Additionally, the shield's bonus AC is increased by your proficiency bonus."
+			]
+		},
+		{
+			"name": "Aura of Truth",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Great Knight",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 102,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Great Knight feature}",
+				"Beginning at 6th level, you constantly emanate an aura of clarity while you're not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover.",
+				"Any enemy creature that enters your aura must succeed on a Charisma saving throw or have their intentions revealed to you, imposing disadvantage on their next attack roll against you. An invisible creature that fails this saving throw is revealed.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Sentinel",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Great Knight",
+			"subclassSource": "FFXIV",
+			"level": 10,
+			"page": 102,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Great Knight feature}",
+				"Beginning at 10th level, while your Aetherial Arms feature is empowering your shield and you have a creature under the effect of Sworn Protector, as a reaction you can apply your aetherial arms shield bonus to their AC as long as they stay within range of sworn protector until the start of your next turn."
+			]
+		},
+		{
+			"name": "Passage of Arms",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Great Knight",
+			"subclassSource": "FFXIV",
+			"level": 14,
+			"page": 102,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Great Knight feature}",
+				"Beginning at 14th level, when your shield is empowered by your Aetherial Arms feature, as an action you manipulate the aether of your aura into a powerful barrier. All creatures in a 30ft. cone take reduced damage equal to your proficiency bonus + your charisma modifier until the start of your next turn.",
+				"Using this feature ends the current effect of the aetherial arms feature."
+			]
+		},
+		{
+			"name": "Crusader",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Crusader",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 102,
+			"entries": [
+				"Paladins in addition to great martial skill have developed magic which reflect their pure hearted convictions, manifesting as divine magic. Crusaders seek to rapidly expand the school of divine magic.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Stave Oath|Sultansworn Paladin|FFXIV|Crusader|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Stave Oath",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Crusader",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 102,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Crusader feature}",
+				"Beginning at 3rd level, you've sworn an oath to master divine magic. Your convictions manifest as a pool of aetherial energy you can use to cast your paladin spells. You have a pool of points equal to your proficiency bonus. When you cast a Paladin spell, instead of spending a spell slot, you may spend a number of these points equal to the spell's level to cast the spell.",
+				"These points are recovered when you complete a long rest."
+			]
+		},
+		{
+			"name": "Aura of Faith",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Crusader",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 103,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Crusader feature}",
+				"Beginning at 6th level, you constantly emanate a soothing aura while you're not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover.",
+				"When you cast a paladin spell, as a bonus action you can recycle the aether of the spell, healing yourself and a number of creatures equal to half your proficiency bonus (rounded down) by a number of hit points equal to your Charisma ability modifier.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Chivalrous Casting",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Crusader",
+			"subclassSource": "FFXIV",
+			"level": 10,
+			"page": 103,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Crusader feature}",
+				"Beginning at 10th level, when you cast a spell using a spell slot you gain a number of Stave Oath points equal to half the spell level (rounded down, minimum of one stave oath point). You do not gain stave oath points when you cast a spell using your Stave Oath feature."
+			]
+		},
+		{
+			"name": "Requiescat",
+			"source": "FFXIV",
+			"className": "Sultansworn Paladin",
+			"classSource": "FFXIV",
+			"subclassShortName": "Crusader",
+			"subclassSource": "FFXIV",
+			"header": 2,
+			"level": 14,
+			"page": 103,
+			"entries": [
+				"{@i 14th-level Crusader feature}",
+				"Beginning at 14th level, when you cast a spell, you can spend Stave Oath points equal to the spell's level to manipulate key elements of the spell to better suit your needs. You do not gain Stave Oath points from the cast of a manipulated spell.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Careful Spell",
+							"entries": [
+								"When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend Stave Oath points equal to the spell's level and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Quickened Spell",
+							"entries": [
+								"When you cast a spell that has a casting time of 1 action, you spend Stave Oath points equal to the spell's level to change the casting time to 1 bonus action for this casting."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

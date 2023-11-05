@@ -1,0 +1,1207 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FFXIV",
+				"abbreviation": "FFXIV5E",
+				"full": "5th Edition D&D x Final Fantasy XIV - Ninja",
+				"authors": [
+					"SilentSoren"
+				],
+				"convertedBy": [
+					"hockeykvalek"
+				],
+				"url": "https://www.gmbinder.com/share/-LsDqsNbupzeLhkTIcPv",
+				"version": "Before The Fall Edition",
+				"color": "867d5a"
+			}
+		],
+		"optionalFeatureTypes": {
+			"NI:NI": "Ninja; Ninjutsu"
+		},
+		"dateAdded": 1957561784,
+		"dateLastModified": 1957561784,
+		"_dateLastModifiedHash": "3a915b08b7"
+	},
+	"subclass": [
+		{
+			"name": "Yoshimitsu",
+			"source": "FFXIV",
+			"page": 4,			
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"shortName": "Yoshimitsu",
+			"subclassFeatures": [
+				"Yoshimitsu|Ninja|FFXIV|Yoshimitsu|FFXIV|3",
+				"Mug|Ninja|FFXIV|Yoshimitsu|FFXIV|6",
+				"Dream Within A Dream|Ninja|FFXIV|Yoshimitsu|FFXIV|11",
+				"Shuhiko|Ninja|FFXIV|Yoshimitsu|FFXIV|17"
+			]
+		},
+		{
+			"name": "Shinobi",
+			"source": "FFXIV",
+			"page": 4,
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"shortName": "Shinobi",
+			"subclassFeatures": [
+				"Shinobi|Ninja|FFXIV|Shinobi|FFXIV|3",
+				"Tangential Understanding|Ninja|FFXIV|Shinobi|FFXIV|6",
+				"Advanced Ninjutsu|Ninja|FFXIV|Shinobi|FFXIV|11",
+				"Ten Chi Jin|Ninja|FFXIV|Shinobi|FFXIV|17"
+			]
+		},
+		{
+			"name": "Shadow",
+			"source": "FFXIV",
+			"page": 4,
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"shortName": "Shadow",
+			"subclassFeatures": [
+				"Shadow|Ninja|FFXIV|Shadow|FFXIV|3",
+				"All Fours|Ninja|FFXIV|Shadow|FFXIV|6",
+				"Trick Attack|Ninja|FFXIV|Shadow|FFXIV|11",
+				"Unseen Action|Ninja|FFXIV|Shadow|FFXIV|17"
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Ninja",
+			"source": "FFXIV",
+			"page": 92,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"{@item blowgun|phb|blowguns}",
+					"{@item longsword|phb|longswords}",
+					"{@item shortsword|phb|shortswords}"
+				],
+				"tools": [
+					"Disguise Kit",
+					"Thieves' Tools"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"desception",
+								"insight",
+								"intimidation",
+								"investigation",
+								"perception",
+								"performance",
+								"persuasion",
+								"sleight of hand",
+								"stealth"
+							],
+							"count": 4
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) two {@item dagger|phb|daggers}",
+					"(a) a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item shortbow|phb} and {@item arrows (20)|phb|20 arrows}",
+					"(a) a set of {@item leather armour|phb}",
+					"(a) a set of Thieves' Tools",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item dungeoneer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							{
+								"item": "dagger|phb",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"_": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"shortbow|phb",
+							"arrows (20)|phb"
+						]
+					},
+					{
+						"_": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"_": [
+							"thieves' tools|phb"
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple",
+						"{@item shortsword|phb|shortswords}"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"acrobatics",
+									"athletics",
+									"desception",
+									"insight",
+									"intimidation",
+									"investigation",
+									"perception",
+									"performance",
+									"persuasion",
+									"sleight of hand",
+									"stealth"
+								],
+								"count": 1
+							}
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Fleet of Foot Movement"
+					],
+					"rows": [
+						[
+							"-"
+						],
+						[
+							"+5ft."
+						],
+						[
+							"+5ft."
+						],
+						[
+							"+5ft."
+						],
+						[
+							"+5ft."
+						],
+						[
+							"+10ft."
+						],
+						[
+							"+10ft."
+						],
+						[
+							"+10ft."
+						],
+						[
+							"+10ft."
+						],
+						[
+							"+15ft."
+						],
+						[
+							"+15ft."
+						],
+						[
+							"+15ft."
+						],
+						[
+							"+15ft."
+						],
+						[
+							"+20ft."
+						],
+						[
+							"+20ft."
+						],
+						[
+							"+20ft."
+						],
+						[
+							"+20ft."
+						],
+						[
+							"+25ft."
+						],
+						[
+							"+25ft."
+						],
+						[
+							"+25ft."
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Mudra|Ninja|FFXIV|1",
+				"Ninjutsu|Ninja|FFXIV|1",
+				"Expertise|Ninja|FFXIV|1",
+				"Cunning Action|Ninja|FFXIV|2",
+				"Fleet of Foot|Ninja|FFXIV|2",
+				{
+					"classFeature": "Ninja Archetype|Ninja|FFXIV|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ninja|FFXIV|4",
+				"Extra Attack|Ninja|FFXIV|5",
+				{
+					"classFeature": "Archetype Feature|Ninja|FFXIV|6",
+					"gainSubclassFeature": true
+				},
+				"Assassinate|Ninja|FFXIV|7",
+				"Ability Score Improvement|Ninja|FFXIV|8",
+				"Uncanny Dodge|Ninja|FFXIV|9",
+				"Reliable Talent|Ninja|FFXIV|10",
+				{
+					"classFeature": "Archetype Feature|Ninja|FFXIV|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ninja|FFXIV|12",
+				"Blindsense|Ninja|FFXIV|13",
+				"First Striker|Ninja|FFXIV|14",
+				"Perfect Dodge|Ninja|FFXIV|15",
+				"Ability Score Improvement|Ninja|FFXIV|16",
+				{
+					"classFeature": "Archetype Feature|Ninja|FFXIV|17",
+					"gainSubclassFeature": true
+				},
+				"Elusive|Ninja|FFXIV|18",
+				"Ability Score Improvement|Ninja|FFXIV|19",
+				"Kassatsu|Ninja|FFXIV|20"
+			],
+			"subclassTitle": "Archetype",
+			"fluff": [
+				{
+					"name": "Ninja",
+					"source": "FFXIV",
+					"type": "section",
+					"entries": [
+						"A brutish thug corners a fearful woman in an alley. Without a sound a series of wounds appear across the thug before he falls into a lump on the stone, a dual wielder standing over him.",
+						"With intense focus, a cloaked individual linked many unseen hand symbols in rapid succession, with a surge of energy from their palms a blazing.",
+						"Deep within the empire stronghold, confidential meetings are held among key imperial targets. In the corner of the room, hidden in the shadows of the room key details are gleaned by the uninvited guest watching them silently.",
+						"Lightly armoured and highly versatile, ninjas are masters of many arts. Mixing magicks, steel and stealth, they find their roots as the special operatives of Doma. When a critical mission needs completion, you can count on a ninja to see it through.",
+						{
+							"name": "Of Heaven, Earth and Man",
+							"type": "entries",
+							"entries": [
+								"Ninjas are renown across the east for their tactical skill, stealth and their ability to manipulate the life energy via incantations known as mudras. By combining the three mudras, sacred hand symbols that represent heaven (Ten), earth (Chi) and man (Jin) they are capable of creating superhuman effects."
+							]
+						},
+						{
+							"name": "Cloak and Dagger",
+							"type": "entries",
+							"entries": [
+								"With a variety of tools at their disposal, ninjas are able to adapt to most any situation. Be it their manipulation of aether, the blades at their side or the shadows themselves, ninjas reliable use every advantage to see their mission completed."
+							]
+						},
+						{
+							"name": "Creating A Ninja",
+							"type": "entries",
+							"entries": [
+								"The way of the ninja is closely guarded by its practitioners and so when creating one of these shadowy operatives, one must consider how they received their training. Do you hail from a long line of ninjas whose secrets have been passed down your bloodline? Perhaps you were scouted from the shadows and recruited into the training regiment by a master. You must also determine why your ninja is travelling, are they on a mission for their master or employer, or have they been forced to go on the run to survive. Perhaps you have decided to put your many talents to use for your own benefit."
+							]
+						},
+						{
+							"name": "Quick Build",
+							"type": "entries",
+							"entries": [
+								"You can make a ninja quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background criminal} background (spy variant)."
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Mudra",
+			"source": "FFXIV",
+			"page": 94,
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, you have learned to channel life energy through your body and use it to manifest supernatural effects. There are three varieties of mudra that you gain access to as your ninja training progresses. You gain access to the Ten mudra at 1st level, the Jin mudra at the 6th level and the Chi mudra at the 9th level. You have a number of mudra points of each type equal to your proficiency bonus + Wisdom ability modifier. You spend these mudra points when using certain ninja class features. You regain all expended mudra points when you complete a short or long rest.",
+				"When a feature makes use of a mudra it may require your target to make a saving throw against the attack or work in a similar way to spell casting. For such effects use the following calculations:",
+				{
+					"type": "abilityDc",
+					"name": "Mudra",
+					"attributes": [
+						"wis"
+					]
+				},
+				{
+					"type": "abilityAttackMod",
+					"name": "Mudra",
+					"attributes": [
+						"wis"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ninjutsu",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 1,
+			"entries": [
+				"Also beginning at 1st level, you are able to cast ninjutsu. The list of {@filter Ninjutsu options|optionalfeatures|feature type=ni:ni} available to you and the mudra cost is listed at the end of the class description."
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 1,
+			"entries": [
+				"At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+			]
+		},
+		{
+			"name": "Cunning Action",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 2,
+			"entries": [
+				"Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+			]
+		},
+		{
+			"name": "Fleet of Foot",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 2,
+			"entries": [
+				"Also starting at 2nd level, your training has lead to you becoming a highly agile fighter. Your speed is increased by 5ft. This bonus increases when you reach certain ninja levels, as shown in the Ninja table."
+			]
+		},
+		{
+			"name": "Ninja Archetype",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 3,
+			"entries": [
+				"At 3rd level, you choose an archetype that you emulate in the exercise of your ninja abilities. Your archetype choice grants you features at 3rd level and then again at 6th, 11th and 17th level."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Ninja Archetype."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain a feature granted by your Ninja Archetype."
+			]
+		},
+		{
+			"name": "Archetype Feature",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain a feature granted by your Ninja Archetype."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Assassinate",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 7,
+			"entries": [
+				"Beginning at 7th level, when you make a melee weapon attack while invisible, your attacks crit on a die result of 18, 19 or 20."
+			]
+		},
+		{
+			"name": "Uncanny Dodge",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 9,
+			"entries": [
+				"Beginning at 9th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+			]
+		},
+		{
+			"name": "Reliable Talent",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 10,
+			"entries": [
+				"Beginning at 10th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+			]
+		},
+		{
+			"name": "Blindsense",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 13,
+			"entries": [
+				"Beginning at 13th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
+			]
+		},
+		{
+			"name": "First Striker",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 14,
+			"entries": [
+				"Beginning at 14th level, you gain advantage on initiative rolls and your first attack roll during combat has advantage."
+			]
+		},
+		{
+			"name": "Perfect Dodge",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 15,
+			"entries": [
+				"Beginning at 15th level, when you take the dodge action, until the start of your next turn you gain a bonus equal to your wisdom ability modifier to your AC and your Dexterity saving throws."
+			]
+		},
+		{
+			"name": "Elusive",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 18,
+			"entries": [
+				"Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated."
+			]
+		},
+		{
+			"name": "Kassatsu",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"page": 94,
+			"level": 20,
+			"entries": [
+				"Beginning at 20th level, when you roll for initiative you recover 3 mudra points and may split them up across the three types of mudra as you see fit."
+			]
+		}	
+	],
+	"subclassFeature": [
+		{
+			"name": "Yoshimitsu",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Yoshimitsu",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 95,
+			"entries": [
+				"Carrying the name of legendary daggers from days long passed, the Yoshimitsu are highly skilled warriors that specialize in dual wielding their weapons, relying on their skill with steel above all else to see their mission complete.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dual Wielding Adept|Ninja|FFXIV|Yoshimitsu|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Dual Wielding Adept",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Yoshimitsu",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 95,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Yoshimitsu feature}",
+				"Beginning at 3rd level, your skill while fighting with a weapon in each hand has improved greatly. When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. Additionally, your AC is increased by 1."
+			]
+		},
+		{
+			"name": "Mug",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Yoshimitsu",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Yoshimitsu feature}",
+				"Beginning at 6th level, your quickness allows you to deceive as efficiently as you strike. You are able to attempt to steal from a creature within 5ft. of you as a part of your Cunning Action feature.",
+				"Additionally, when making a {@skill Sleight of Hand} check, you may add your Wisdom ability modifier as a bonus to the roll. You do not gain this bonus when used as a part of your cunning action."
+			]
+		},
+		{
+			"name": "Dream Within A Dream",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Yoshimitsu",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Yoshimitsu feature}",
+				"Beginning at 11th level, when you make a melee weapon attack as a bonus attack with your offhand weapon, you make two attacks."
+			]
+		},
+		{
+			"name": "Shuhiko",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Yoshimitsu",
+			"subclassSource": "FFXIV",
+			"level": 17,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Yoshimitsu feature}",
+				"Beginning at 17th level, you've learned to channel mudra through your weapons to increase their . You add your Wisdom modifier to weapon damage rolls."
+			]
+		},
+		{
+			"name": "Shinobi",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 95,
+			"entries": [
+				"Masters of sword and spell, Shinobi are generalists who have focused on mastering mudras and the manipulation of life energy to suit many situations. From concealment and escape to overpowering fearsome foes, Shinobi are able to use mystic artes to solve any number of problems.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Meisui|Ninja|FFXIV|Shinobi|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Meisui",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 95,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Shinobi feature}",
+				"Beginning at 3rd level, as a bonus action you may take 1 level of exhaustion to recover all missing mudra points."
+			]
+		},
+		{
+			"name": "Tangential Understanding",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Shinobi feature}",
+				"Beginning at 6th level, you gain proficiency in the {@skill Arcana} skill."
+			]
+		},
+		{
+			"name": "Advanced Ninjutsu",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Shinobi feature}",
+				"Beginning at 11th level, your mastery over mudra allows you to empower your ninjutsu casts. By spending twice the mudra cost, the ninjutsu gains an additional effect noted in its description."
+			]
+		},
+		{
+			"name": "Ten Chi Jin",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "FFXIV",
+			"level": 17,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Shinobi feature}",
+				"Beginning at 17th level, you are able to create a field of life energy which allows you to cast ninjutsu without spending mudra points. The field has a radius of 10ft. centered on you for one minute or until you have used it to cast three ninjutsu.",
+				"You may use this feature once. Use of this feature is recovered when you complete a long rest."
+			]
+		},
+		{
+			"name": "Shadow",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadow",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 95,
+			"entries": [
+				"Shadows are masters of stealth and infiltration. Having mastered the ability to hide their presence, they have no issue in finding their way through any door or around any guard. Though rarely regarded as the source of a problem, Shadows are notorious for the chaos they can cause when left alone behind enemy lines.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Thinning|Ninja|FFXIV|Shadow|FFXIV|3"
+				}
+			]
+		},
+		{
+			"name": "Thinning",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadow",
+			"subclassSource": "FFXIV",
+			"level": 3,
+			"page": 95,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Shadow feature}",
+				"Beginning at 3rd level, you've mastered a dangerous yet effective way of achieving invisibility by dispersing the aether of your body. As a bonus action, you become invisible by taking 1 level of exhaustion. Anything you are wearing or carrying is Invisible as long as it is on your person. The effect ends when you Attack, cast a spell, cast a ninjutsu, or have been invisible for 1 minute."
+			]
+		},
+		{
+			"name": "All Fours",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadow",
+			"subclassSource": "FFXIV",
+			"level": 6,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Shadow feature}",
+				"Beginning at 6th level, you've learned to move with suberb stealth. Your steps do not make sound when you walk and any fall damage you take is halved."
+			]
+		},
+		{
+			"name": "Trick Attack",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadow",
+			"subclassSource": "FFXIV",
+			"level": 11,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Shadow feature}",
+				"Beginning at 11th level, while you are invisible you may use your action to perform a disorienting attack against an opponent. You make a melee weapon attack against a target and on hit the creature must succeed on a Intelligence saving throw against your Mudra save DC. On a failure all attacks made against the creature have advantage until the start of your next turn."
+			]
+		},
+		{
+			"name": "Unseen Action",
+			"source": "FFXIV",
+			"className": "Ninja",
+			"classSource": "FFXIV",
+			"subclassShortName": "Shadow",
+			"subclassSource": "FFXIV",
+			"level": 17,
+			"page": 95,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Shadow feature}",
+				"Beginning at 17th level, you have learned to maintain your invisibility no matter how hard you push yourself. By spending one mudra of any type you may make an attack, cast a spell or cast a ninjutsu without losing your invisibility."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Armor Crush",
+			"source": "FFXIV",
+			"page": 96,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Mudra of any type",
+				"As a bonus action you temporarily fill the weapon in your main hand with aether, making it easier to pierce the armour of a foe. Instead of making attack rolls, the target creature of your attacks until the start of your next turn must make a Dexterity saving throw against your Mudra save DC or be hit by the attack. These attacks deal bonus force damage equal to your Wisdom modifier.",
+				"Enhanced Ninjutsu: Your Mudra save DC gains a +2 bonus when attacking with armor crush damage and the bonus damage is increased to double your Wisdom modifier."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Choho",
+			"source": "FFXIV",
+			"page": 96,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Mudra of any type",
+				"As a bonus action, you become invisible. Anything you are wearing or carrying is Invisible as long as it is on your person. The effect ends when you Attack, cast a spell, cast a ninjutsu, or have been invisible for 10 minutes."				
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Doton",
+			"source": "FFXIV",
+			"page": 96,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 of each of the three types of Mudra",
+				"As an action, you create a circle of corrupted earth on the ground centered on a point around you. You are unaffected by the corrupted earth. The circle has a radius of 10ft. and is considered to be difficult terrain for all creatures except for you. Creatures take 2d4 necrotic damage for every 5ft. they travel within Doton. When Doton appears, all creatures within the ring make a Dexterity saving throw, taking 4d4 necrotic damage and half as much on a successful save. You are unaffected by this damage.",
+				"Enhanced Ninjutsu: The damage a creature takes when they move through the ring is increased by 2d4 and each time a creature takes damage from Doton they must succeed on a Constitution saving throw or become poisoned for one minute."				
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Fuma Shuriken",
+			"source": "FFXIV",
+			"page": 96,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 mudra of any type",
+				"As an action, you create whirling blades of wind that take the form of a large shuriken and throw it at a target creature within 60 feet. You make a mudra spell attack against the target, dealing 1d12 thunder damage on hit.",
+				"Enhanced Ninjutsu: Hit or miss, the shuriken explodes with a burst of wind energy. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d8 thunder damage."				
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Goka Mekkyau",
+			"source": "FFXIV",
+			"page": 96,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Ten mudra and 3 mudra of any type",
+				"As an action you creature a fiery typhoon at a location you can see within 120ft. of you. All creatures in a 20ft. radius must succeed on a Dexterity saving throw or take 4d6 fire damage and 4d6 thunder damage, or half as much on a success. The affected area continues to burn for 1 minute afterwards. A creature entering the space for the first time or starting their turn in the area takes 1d10 fire damage.",
+				"Enhanced Ninjutsu: The damage is increased by 4d6 fire damage and the affected area becomes difficult terrain while it is burning."				
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Hollow Nozuchi",
+			"source": "FFXIV",
+			"page": 96,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Jin mudra and 3 mudra of any type",
+				"As an action, you summon an aetherial snake tails that make up to 5 attacks against creatures within a 120ft. radius centered on you. These attacks may be split up across up to five targets or be focused on a single target. Make a mudra spell attack against each creature, dealing 2d6 bludgeoning damage on hit.",
+				"Enhanced Ninjutsu: Hollow Nozuchi creates striking snake heads which attempt to bite creatures instead, dealing piercing damage instead and dealing a bonus 1d6 poison damage on hit. Each time a creature is hit by an attack it must make a Constitution saving throw or become poisoned for one hour."
+			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Huraijin",
+			"source": "FFXIV",
+			"page": 96,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Ten mudra and 2 mudra of any type",
+				"As a bonus action, you infuse your weapon with wind aether increasing the effectiveness of one of your weapons for one hour. Your attack and damage rolls gain a +1 bonus to attack rolls and deals 1d4 additional thunder damage.",
+				"Enhanced Ninjutsu: The attack roll bonus is increased to +2 and the damage roll bonus is increased to 2d4 thunder damage."				
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Huton",
+			"source": "FFXIV",
+			"page": 96,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 of each of the three types of Mudra",
+				"As a bonus action, you use mudra to heighten your body's abilities for 1 minute. Your speed is doubled, you gain a +2 bonus to AC, have advantage on Dexterity saving throws, and gain an additional action on each of your turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action. When the effect ends, you can't move or take actions until after your next turn, as a wave of lethargy sweeps over it.",
+				"Enhanced Ninjutsu: You can cast Huton on a willing creature that you can touch. You must maintain concentration as you would for a spell for the creature to maintain this effect."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Hyosho Ranryu",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Chi mudra and 2 mudra of any type",
+				"As an action, you create 6 shurikens of ice. Each shuriken hits a creature of your choice that you can see within range. A shuriken deals 1d4 + 1 cold damage to its target. The shuriken all strike simultaneously, and you can direct them to hit one creature or several.",
+				"Enhanced Ninjutsu: You create twice the number of shurikens."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Hyoton",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Chi mudra and 1 mudra of any type",
+				"As an action, you release a burst of icy energy in a 30ft. cone in front of you. All creatures in the effected area must succeed on a strength saving throw against your mudra save DC taking 4d6 cold damage and become restrained, or take half as much damage on a success and not become restrained.",
+				"Enhanced Ninjutsu: The damage is increased by 2d6 cold damage and the affected area become difficult terrain for 1 minute."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Katon",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Ten mudra and 1 mudra of any type",
+				"As an action, you conjure a fire ball and throw it at a location within 60ft. of you. The fire ball explores in a 20ft. radius sphere and all creatures in the affected area must make a Dexterity saving throw, taking 6d6 fire damage on a failure and half as much on a success.",
+				"Enhanced Ninjutsu: The damage is increased by 2d6 fire damage and the affected radius is increased by 10ft."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Meiton",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 mudra of any type",
+				"As a bonus action, you create a 20-foot-radius sphere of smoke centered on a point around you. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+				"Enhanced Ninjutsu: Each creature that starts its turn within the sphere of smoke must make a Constitution saving throw, becoming poisoned for 1 minute on a failure. You are immune to this effect."				
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Phantom Kamaitachi",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 Chi mudra and 3 mudra of any type",
+				"As an action, you create a phantom copy of yourself which attacks in tandem with you. You make a two melee mudra attacks, dealing 2d10 thunder damage on hit. Additionally, you gain the effect of the dodge action.",
+				"Enhanced Ninjutsu: Your phantom makes two additional weapon attacks."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Raiju",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
+			"entries": [
+				"Cost: 3 Chi mudra and 3 mudra of any type",
+				"As an action you wreath your body in lighting an release is in one of two ways:",
+				"Forked Raiju: You instantaneously appear in an unoccupied space next to a creature within 30ft. of you. All creatures within 5ft. of your location must succeed a Dexterity saving throw against your mudra save DC or take 10d6 lightning damage and half as much on a success.",
+				"Fleeting Raiju: You release a flood of lightning energy around a creature you can touch. You make a mudra spell attack, dealing 10d8 lightning damage on hit.",
+				"Enhanced Ninjutsu: The number of damage die rolled for the chosen Raiju doubles."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Raiton",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 Jin mudra and 1 mudra of any type",
+				"As an action, calling on the power of the Chi mudra, you call down a bolt of lightning at a location you can see within 60ft. of you. The lightning bursts dealing damage to all creatures within a 10ft. radius of the location. Each creature must make a Dexterity saving throw against your mudra save DC, taking 5d8 lightning damage on a failure and half as much on a success.",
+				"Enhanced Ninjutsu: When enhanced, you may call down two bolts of lightning. You may call them to the same location and strike same creatures a second time. The creatures must repeat the saving throw."				
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Shukuchi",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					}
+				}
+			],
+			"entries": [
+				"Cost: 2 mudra of any type",
+				"As a bonus action, you teleport up to 30 feet to an unoccupied space that you can see."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		},
+		{
+			"name": "Suiton",
+			"source": "FFXIV",
+			"page": 97,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"Cost: 1 of each of the three types of Mudra",
+				"As an action, emphasizing the power of the Jin mudra, you create a powerful geyser of water to erupt from beneath you in a 10ft. radius circle. Each creature in the affected area must make a dexterity saving throw, taking 4d8 bludgeoning damage on a failure, and half as much damage on a success. Additionally, you and any items you are wearing or carrying become invisible for 1 minute. The invisibility ends when you attack, cast a spell or ninjutsu, or after 1 minute has passed.",
+				"Enhanced Ninjutsu: The damage is increased by 2d8 bludgeoning damage and all creatures in the affected area must succeed on a strength saving throw against your mudra save DC or be knocked back by 15ft."			
+			],
+			"featureType": [
+				"NI:NI"
+			]
+		}
+	]
+}
